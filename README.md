@@ -22,9 +22,9 @@ conda env create -n stexplainer python=3.8
 
 conda activate stexplainer
 
-# Torch with CUDA 11.7
+# Torch with CUDA 11.6
 pip install torch==1.12.0+cu116 torchvision==0.13.0+cu116 torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cu116
-# Clone our GraphGPT
+# Clone our STExplainer
 git clone https://github.com/HKUDS/STExplainer.git
 cd STExplainer
 # Install required libaries
