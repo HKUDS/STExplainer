@@ -78,3 +78,4 @@ series = {CIKM '23}
 
 
 ## Acknowledgements
+The structure of our code is based on [GSAT](https://github.com/Graph-COM/GSAT), [BasicTS](https://github.com/zezhishao/BasicTS) and [GIB](https://github.com/snap-stanford/GIB). Thank for their work.
