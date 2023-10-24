@@ -1,0 +1,57 @@
+control: 
+  model: STGSAT
+  testonly: 0
+  device: cuda:0
+  mdir: ./results/model/
+  logdir: ./results/log/
+  date: 2023y10m24d
+
+data:
+  dataset: PEMS4
+  data_path: ./data/county/covid19_2020_01_23_2022_07_31_921x3249x5_county_csse_new.h5
+  val_ratio: 0.2
+  test_ratio: 0.2
+  lag: 12
+  horizon: 12
+  batch_size: 32
+  geo_graph: ./data/county/geo_geaph_county_full.cpt
+  num_nodes: 307
+  trend_flg: 1
+  adj_filename: ./data/PEMS04/PEMS04.csv
+  id_filename: None
+
+training:
+  patience: 20
+  model_path: ./results/model/2022y9m5d/STID.pkl
+  mae_thresh: 0.0
+  mape_thresh: 0.0
+  lr: 0.001
+  # weight_decay: 0.0001
+  weight_decay: 0.0
+  lr_decay_ratio: 0.5
+  steps: [1, 50, 100]
+  criterion: 'Smooth'
+  max_epoch: 200
+  grad_norm: 1
+
+model:
+# GIB
+  reparam_mode: "diag"
+  prior_mode: "mixGau-100"
+  struct_dropout_mode: 0
+  head: [16, 1]
+  only_spat: 0
+  beta1: 1
+  beta2: 1
+  gib_drop: 0.3
+  spat_gsat: 1
+  temp_gsat: 1
+  # para
+  fix_r: 0 
+  final_r: 0.5
+  init_r: 0.9
+  d_model_temp: 128
+  d_model_spat: 64
+  debug: 1
+
+  
