@@ -4,7 +4,7 @@ This is the PyTorch implementation by <a href='https://github.com/tjb-tech'>@Jia
 
  >**Explainable Spatio-Temporal Graph Neural Networks**  
  > Jiabin Tang, Lianghao Xia, Chao Huang*\
- >*SIGIR 2023*
+ >*CIKM 2023*
 
 \* denotes corresponding author
 <p align="center">
