@@ -2,7 +2,7 @@
 
 This is the PyTorch implementation by <a href='https://github.com/tjb-tech'>@Jiabin Tang</a> for STExplainer model proposed in this paper:
 
- >**Explainable Spatio-Temporal Graph Neural Networks**  
+ >**<a href='https://arxiv.org/abs/2310.17149'>Explainable Spatio-Temporal Graph Neural Networks</a>**  
  > Jiabin Tang, Lianghao Xia, Chao Huang*\
  >*CIKM 2023*
 
